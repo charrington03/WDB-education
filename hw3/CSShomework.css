@@ -1,0 +1,180 @@
+/* Ignore following classes */
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EEEEEE;
+}
+
+#intro{
+    color:rgb(0, 0, 0);
+    text-align: center;
+    margin: 50px;
+}
+
+.insideborder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.para{
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+h2{
+    font-size: medium;
+    font-weight: 200;
+}
+
+
+/* Classes that you might find useful */
+/* Note* These classes do not cover every possibloe case to build you flags, you will have to continue to add your own*/
+
+
+.flag{
+    height: 300px;
+    width: 500px;
+    border-style: solid;
+    margin-bottom: 5rem;
+}
+
+.horiz{
+    display: flex;
+    flex-direction: row;
+}
+
+.twovert{
+    height: 50%;
+}
+
+.threevert{
+    height: 33.3%;
+}
+
+.twohoriz{
+    width: 50%;
+}
+
+.threehoriz{
+    width: 33.3%
+}
+
+.skinny{
+    height: 17.5%;
+}
+
+.fat{
+    height: 30%;
+}
+
+.skinnyhoriz{
+    width: 17.5%;
+}
+
+.fathoriz{
+    width: 30%;
+}
+
+.veryskinny {
+    height: 11.11%
+}
+
+.circle{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 85px;
+    top: 50px
+}
+
+#mex-middle {
+    display: flex;
+    
+    justify-content: center;;
+
+}
+
+#bird {
+    transform: scale(0.4);
+}
+
+#fin-horiz {
+    height: 100%;
+    transform: translate(130px, -200px);
+}
+
+
+.greece-cross {
+    height: 167px;
+    width: 167px;
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+}
+
+#greece-cross-horiz {
+    height: 33.33px;
+    width: 100%;
+}
+
+#greece-cross-vert {
+    height: 100%;
+    width: 33.33px;
+    position: absolute;
+    left: 66px;
+}
+
+.sri {
+    align-items: center;
+}
+
+.sri-left {
+    margin-left: 15px;
+    margin-right: 20px;
+    width: 30%;
+    height: 85%;
+}
+
+.sri-right {
+    width: 60%;
+    height: 85%;
+}
+
+
+
+/* Colors/ Feel free to add your own! */
+
+.red{
+    background-color: red;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.lightblue{
+    background-color: lightblue;
+}
+
+.purple{
+    background-color: purple;
+}
+
+
+
