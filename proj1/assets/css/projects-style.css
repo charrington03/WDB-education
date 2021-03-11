@@ -7,7 +7,7 @@ body {
 #bigP {
     position: absolute;
     right: -170px;
-    height: 105%;
+    height: 100%;
     width: auto;
 }
 
@@ -135,7 +135,7 @@ a {
 
 #bottom {
     position: absolute;
-    top: 110%;
+    top: 120%;
     margin-top: 50px;
     width: 100%;
     display: flex;
