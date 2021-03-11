@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background: #FFFDF8;
+}
+
+#bigP {
+    position: absolute;
+    right: -15%;
+    height: 105%;
+    width: auto;
+}
+
+#text {
+    position: absolute;
+    left: 5%;
+    top: 90px;
+
+    width: 60%;
+}
+
+h1 {
+    font-family: Archia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+
+    color: #0E0E0B;
+
+    margin: 0px;
+}
+
+p {
+    font-family: Archia;
+    font-size: 32px;
+    line-height: 43px;
+
+    color: #0E0E0B;
+
+    margin: 0px;
+
+}
+
+.navP {
+    position: absolute;
+    width: 624px;
+    height: 84px;
+    left: 50px;
+    bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+
+    z-index: 2;
+}
+
+.navP > * {
+    margin-right: 18px;
+}
+
+
+h2 {
+    font-family: Archia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+
+    color: #0E0E0B;
+}
+
+a {
+    text-decoration: none;
+}
+
+#vlines {
+    z-index: -1;
+    position: relative;
+    left: 76px;
+}
+
+@keyframes moveToHome {
+    0% {
+        left: 76px;
+    }
+    100% {
+        left: -275px;
+    }
+}
+
+@keyframes moveBackHome {
+    0% {
+        left: -275px;
+    }
+    100% {
+        left: 76px;
+    }
+}
+
+@keyframes moveToAbout {
+    0% {
+        left: 76px;
+    }
+    100% {
+        left: -115px;
+    }
+}
+
+@keyframes moveBackAbout {
+    0% {
+        left: -115px;
+    }
+    100% {
+        left: 76px;
+    }
+}
+
+@keyframes moveToContact {
+    0% {
+        left: 76px;
+    }
+    100% {
+        left: 267px;
+    }
+}
+
+@keyframes moveBackContact {
+    0% {
+        left: 267px;
+    }
+    100% {
+        left: 76px;
+    }
+}
+
+#bottom {
+    position: absolute;
+    top: 550px;
+    margin-top: 200px;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 400px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card > img {
+    width: 420px;
+    height: 160px;
+}
+
+.card > h3 {
+    font-family: Archia;
+    font-size: 26px;
+    font-weight: normal;
+    margin: 5 auto;
+}
+
+.card > h4 {
+    font-family: Archia;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+#coming-soon {
+    font-family: Archia;
+    font-size: 26px;
+    font-weight: normal;
+
+    margin: 100px;    
+}
+
+#down {
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sticky {
+    position: fixed;
+    top: 5px;
+}

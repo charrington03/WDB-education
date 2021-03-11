@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #FFFDF8;
+}
+
+#bigC {
+    position: absolute;
+    right: -8%;
+    height: 105%;
+    top: -12px;
+    width: auto;
+}
+
+#text {
+    position: absolute;
+    left: 5%;
+    top: 90px;
+
+    width: 60%;
+}
+
+h1 {
+    font-family: Archia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+
+    color: #0E0E0B;
+
+    margin: 0px;
+}
+
+p {
+    font-family: Archia;
+    font-size: 32px;
+    line-height: 43px;
+
+    color: #0E0E0B;
+
+    margin: 0px;
+
+}
+
+#navC {
+    position: absolute;
+    width: 624px;
+    height: 84px;
+    left: 50px;
+    bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#navC > * {
+    margin-right: 18px;
+}
+
+
+h2 {
+    font-family: Archia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+
+    color: #0E0E0B;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+#vlines {
+    z-index: -1;
+    position: relative;
+    left: 76px;
+}
+
+@keyframes moveToHome {
+    0% {
+        left: 76px;
+    }
+    100% {
+        left: -467px;
+    }
+}
+
+@keyframes moveBackHome {
+    0% {
+        left: -467px;
+    }
+    100% {
+        left: 76px;
+    }
+}
+
+@keyframes moveToAbout {
+    0% {
+        left: 76px;
+    }
+    100% {
+        left: -307px;
+    }
+}
+
+@keyframes moveBackAbout {
+    0% {
+        left: -307px;
+    }
+    100% {
+        left: 76px;
+    }
+}
+
+@keyframes moveToProjects {
+    0% {
+        left: 76px;
+    }
+    100% {
+        left: -134px;
+    }
+}
+
+@keyframes moveBackProjects{
+    0% {
+        left: -134px;
+    }
+    100% {
+        left: 76px;
+    }
+}

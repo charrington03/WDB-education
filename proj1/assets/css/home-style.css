@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #FFFDF8;
+}
+
+#bigH {
+    transform: translate(-230px, -17px);
+    height: 110%;
+    width: auto;
+
+}
+
+#text {
+    position: absolute;
+    left: 30%;
+    top: 90px;
+}
+
+h1 {
+    font-family: Archia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+
+    color: #0E0E0B;
+
+    margin: 0px;
+}
+
+p {
+    font-family: Archia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+
+    color: #0E0E0B;
+
+    margin: 0px;
+
+}
+
+#navH {
+    position: absolute;
+    width: 624px;
+    height: 84px;
+    right: 50px;
+    bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#navH > * {
+    margin-right: 18px;
+}
+
+h2 {
+    font-family: Archia;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: normal;
+
+    color: #0E0E0B;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+#vlinesH {
+    z-index: -1;
+    position: relative;
+    left: 60px;
+    
+}
+
+@keyframes moveToAbout {
+    0% {
+        left: 60px;
+    }
+    100% {
+        left: 220px;
+    }
+}
+
+@keyframes moveBackAbout {
+    0% {
+        left: 220px;
+    }
+    100% {
+        left: 60px;
+    }
+}
+
+@keyframes moveToProjects {
+    0% {
+        left: 60px;
+    }
+    100% {
+        left: 393px;
+    }
+}
+
+@keyframes moveBackProjects {
+    0% {
+        left: 393px;
+    }
+    100% {
+        left: 60px;
+    }
+}
+
+@keyframes moveToContact {
+    0% {
+        left: 60px;
+    }
+    100% {
+        left: 582px;
+    }
+}
+
+@keyframes moveBackContact {
+    0% {
+        left: 582px;
+    }
+    100% {
+        left: 60px;
+    }
+}
+
