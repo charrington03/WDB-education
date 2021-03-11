@@ -79,12 +79,13 @@ a {
 #vlines {
     z-index: -1;
     position: relative;
-    left: 76px;
+    left: 60px;
+    margin: 0;
 }
 
 @keyframes moveToHome {
     0% {
-        left: 76px;
+        left: 60px;
     }
     100% {
         left: -467px;
@@ -96,13 +97,13 @@ a {
         left: -467px;
     }
     100% {
-        left: 76px;
+        left: 60px;
     }
 }
 
 @keyframes moveToAbout {
     0% {
-        left: 76px;
+        left: 60px;
     }
     100% {
         left: -307px;
@@ -114,13 +115,13 @@ a {
         left: -307px;
     }
     100% {
-        left: 76px;
+        left: 60px;
     }
 }
 
 @keyframes moveToProjects {
     0% {
-        left: 76px;
+        left: 60px;
     }
     100% {
         left: -134px;
@@ -132,6 +133,6 @@ a {
         left: -134px;
     }
     100% {
-        left: 76px;
+        left: 60px;
     }
 }

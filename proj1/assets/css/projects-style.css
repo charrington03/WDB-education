@@ -6,7 +6,7 @@ body {
 
 #bigP {
     position: absolute;
-    right: -15%;
+    right: -170px;
     height: 105%;
     width: auto;
 }
@@ -75,12 +75,13 @@ a {
 #vlines {
     z-index: -1;
     position: relative;
-    left: 76px;
+    left: 57px;
+    margin: 0;
 }
 
 @keyframes moveToHome {
     0% {
-        left: 76px;
+        left: 57px;
     }
     100% {
         left: -275px;
@@ -92,13 +93,13 @@ a {
         left: -275px;
     }
     100% {
-        left: 76px;
+        left: 57px;
     }
 }
 
 @keyframes moveToAbout {
     0% {
-        left: 76px;
+        left: 57px;
     }
     100% {
         left: -115px;
@@ -110,33 +111,32 @@ a {
         left: -115px;
     }
     100% {
-        left: 76px;
+        left: 57px;
     }
 }
 
 @keyframes moveToContact {
     0% {
-        left: 76px;
+        left: 57px;
     }
     100% {
-        left: 267px;
+        left: 250px;
     }
 }
 
 @keyframes moveBackContact {
     0% {
-        left: 267px;
+        left: 250px;
     }
     100% {
-        left: 76px;
+        left: 57px;
     }
 }
 
 #bottom {
     position: absolute;
-    top: 550px;
-    margin-top: 200px;
-
+    top: 110%;
+    margin-top: 50px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -194,4 +194,166 @@ a {
 .sticky {
     position: fixed;
     top: 5px;
+}
+
+
+#dropdown-white {
+    display: none;
+}
+
+#dropdown-black {
+    display: none;
+}
+
+#fullnav {
+    display: none;
+}
+
+@media only screen and (max-width: 980px) {
+    .navP {
+        display: none;
+    }
+
+    #bigP {
+        right: -320px
+    }
+
+    #dropdown-white {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    #fullnav {
+        display: block;
+    }
+
+    .fullnav {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 3;
+        left: 0;
+        top: 0;
+
+        background-color: #FFFDF8;
+
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .fullnav-content {
+        position: relative;
+    }
+
+    #fullnav-x {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 4;
+    }
+
+    .fullnav-text {
+        width: 217;
+        height: 248;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fullnav-text a {
+        font-family: Archia;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 40px;
+        color: #0E0E0B;
+        margin: 10px;
+    }
+
+    #hlines {
+        z-index: -1;
+        position: absolute;
+        transform: translate(0, -102px);
+    }
+
+    @keyframes toAbout {
+        0% {
+            transform: translate(0, -102px);
+        }
+        100% {
+            transform: translate(0, -34px);
+        }
+    }
+
+    @keyframes backAbout {
+        0% {
+            transform: translate(0, -34px);
+        }
+        100% {
+            transform: translate(0, -102px);
+        }
+    }
+
+    @keyframes toProjects {
+        0% {
+            transform: translate(0, -102px);
+        }
+        100% {
+            transform: translate(0, 34px);
+        }
+    }
+
+    @keyframes backProjects {
+        0% {
+            transform: translate(0, 34px);
+        }
+        100% {
+            transform: translate(0, -102px);
+        }
+    }
+
+    @keyframes toContact {
+        0% {
+            transform: translate(0, -102px);
+        }
+        100% {
+            transform: translate(0, 102px);
+        }
+    }
+
+    @keyframes backContact {
+        0% {
+            transform: translate(0, 102px);
+        }
+        100% {
+            transform: translate(0, -102px);
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    #bigP {
+        display: none;
+    }
+    
+    #text {
+        position: relative;
+        left: 0;
+        top: 70px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    p {
+        font-size: 28;
+    }
 }

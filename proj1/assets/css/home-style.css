@@ -5,15 +5,17 @@ body {
 }
 
 #bigH {
-    transform: translate(-230px, -17px);
-    height: 110%;
+    position: absolute;
+    top: -17px;
+    left: -200px;
+    height: 105%;
     width: auto;
 
 }
 
 #text {
     position: absolute;
-    left: 30%;
+    left: 35%;
     top: 90px;
 }
 
@@ -76,40 +78,40 @@ a {
 #vlinesH {
     z-index: -1;
     position: relative;
-    left: 60px;
-    
+    left: 42px;
+    margin: 0;
 }
 
 @keyframes moveToAbout {
     0% {
-        left: 60px;
+        left: 42px;
     }
     100% {
-        left: 220px;
+        left: 202px;
     }
 }
 
 @keyframes moveBackAbout {
     0% {
-        left: 220px;
+        left: 202px;
     }
     100% {
-        left: 60px;
+        left: 42px;
     }
 }
 
 @keyframes moveToProjects {
     0% {
-        left: 60px;
+        left: 42px;
     }
     100% {
-        left: 393px;
+        left: 375px;
     }
 }
 
 @keyframes moveBackProjects {
     0% {
-        left: 393px;
+        left: 375px;
     }
     100% {
         left: 60px;
@@ -121,16 +123,174 @@ a {
         left: 60px;
     }
     100% {
-        left: 582px;
+        left: 564px;
     }
 }
 
 @keyframes moveBackContact {
     0% {
-        left: 582px;
+        left: 564px;
     }
     100% {
         left: 60px;
     }
 }
 
+
+
+#dropdown {
+    display: none;
+}
+
+#fullnav {
+    display: none;
+}
+
+@media only screen and (max-width: 980px) {
+    #navH {
+        display: none;
+    }
+
+    #bigH {
+        left: -275px;
+    }
+
+    #dropdown {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    #fullnav {
+        display: block;
+    }
+
+    .fullnav {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 3;
+        left: 0;
+        top: 0;
+
+        background-color: #FFFDF8;
+
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .fullnav-content {
+        position: relative;
+    }
+
+    #fullnav-x {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 4;
+    }
+
+    .fullnav-text {
+        width: 217;
+        height: 248;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fullnav-text a {
+        font-family: Archia;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 40px;
+        color: #0E0E0B;
+        margin: 10px;
+    }
+
+    #hlines {
+        z-index: -1;
+        position: absolute;
+        transform: translate(0, -102px);
+    }
+
+    @keyframes toAbout {
+        0% {
+            transform: translate(0, -102px);
+        }
+        100% {
+            transform: translate(0, -34px);
+        }
+    }
+
+    @keyframes backAbout {
+        0% {
+            transform: translate(0, -34px);
+        }
+        100% {
+            transform: translate(0, -102px);
+        }
+    }
+
+    @keyframes toProjects {
+        0% {
+            transform: translate(0, -102px);
+        }
+        100% {
+            transform: translate(0, 34px);
+        }
+    }
+
+    @keyframes backProjects {
+        0% {
+            transform: translate(0, 34px);
+        }
+        100% {
+            transform: translate(0, -102px);
+        }
+    }
+
+    @keyframes toContact {
+        0% {
+            transform: translate(0, -102px);
+        }
+        100% {
+            transform: translate(0, 102px);
+        }
+    }
+
+    @keyframes backContact {
+        0% {
+            transform: translate(0, 102px);
+        }
+        100% {
+            transform: translate(0, -102px);
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    #bigH {
+        display: none;
+    }
+    
+    #text {
+        position: relative;
+        left: 0;
+        top: 70px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    p {
+        font-size: 28;
+    }
+}

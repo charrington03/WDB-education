@@ -15,7 +15,7 @@ document.getElementById('home').addEventListener('mouseenter', async e => {
 document.getElementById('home').addEventListener('mouseleave', async e => {
     vlines.style.animation = 'moveBackHome 0.2s ease-in-out';
     await sleep(20);
-    vlines.style.left = '76px';
+    vlines.style.left = '60px';
 });
 
 document.getElementById('about').addEventListener('mouseenter', async e => {
@@ -28,7 +28,7 @@ document.getElementById('about').addEventListener('mouseenter', async e => {
 document.getElementById('about').addEventListener('mouseleave', async e => {
     vlines.style.animation = 'moveBackAbout 0.2s ease-in-out';
     await sleep(20);
-    vlines.style.left = '76px';
+    vlines.style.left = '60px';
 });
 
 document.getElementById('projects').addEventListener('mouseenter', async e => {
@@ -41,5 +41,5 @@ document.getElementById('projects').addEventListener('mouseenter', async e => {
 document.getElementById('projects').addEventListener('mouseleave', async e => {
     vlines.style.animation = 'moveBackProjects 0.2s ease-in-out';
     await sleep(20);
-    vlines.style.left = '76px';
+    vlines.style.left = '60px';
 });

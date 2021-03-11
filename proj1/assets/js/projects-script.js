@@ -15,7 +15,7 @@ document.getElementById('home').addEventListener('mouseenter', async e => {
 document.getElementById('home').addEventListener('mouseleave', async e => {
     vlines.style.animation = 'moveBackHome 0.2s ease-in-out';
     await sleep(20);
-    vlines.style.left = '76px';
+    vlines.style.left = '57px';
 });
 
 document.getElementById('about').addEventListener('mouseenter', async e => {
@@ -28,26 +28,26 @@ document.getElementById('about').addEventListener('mouseenter', async e => {
 document.getElementById('about').addEventListener('mouseleave', async e => {
     vlines.style.animation = 'moveBackAbout 0.2s ease-in-out';
     await sleep(20);
-    vlines.style.left = '76px';
+    vlines.style.left = '57px';
 });
 
 document.getElementById('contact').addEventListener('mouseenter', async e => {
     vlines.style.animation = 'moveToContact 0.2s ease-in-out';
     await sleep(20);
-    vlines.style.left = '267px';
+    vlines.style.left = '250px';
 
 });
 
 document.getElementById('contact').addEventListener('mouseleave', async e => {
     vlines.style.animation = 'moveBackContact 0.2s ease-in-out';
     await sleep(20);
-    vlines.style.left = '76px';
+    vlines.style.left = '57px';
 });
 
 // Down button
 document.getElementById('down').onclick = function scrollDown() {
     window.scrollTo({
-        top: 665, left: 0, behavior: 'smooth'
+        top: window.innerHeight * 1.05, left: 0, behavior: 'smooth'
     })
 };
 
