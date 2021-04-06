@@ -1,1 +1,2 @@
 React-lessons/
+.DS_Store
