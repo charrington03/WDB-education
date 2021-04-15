@@ -1,0 +1,66 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _logoSvg = require('./logo.svg');
+var _logoSvgDefault = _parcelHelpers.interopDefault(_logoSvg);
+require('./App.css');
+var _jsxFileName = "/Users/connorh/OneDrive/WDB/EDU/assignments/proj3-react/office-queue/src/App.js";
+function App() {
+  return (
+    /*#__PURE__*/React.createElement("div", {
+      className: "App",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 6,
+        columnNumber: 5
+      }
+    }, /*#__PURE__*/React.createElement("header", {
+      className: "App-header",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7,
+        columnNumber: 7
+      }
+    }, /*#__PURE__*/React.createElement("img", {
+      src: _logoSvgDefault.default,
+      className: "App-logo",
+      alt: "logo",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8,
+        columnNumber: 9
+      }
+    }), /*#__PURE__*/React.createElement("p", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9,
+        columnNumber: 9
+      }
+    }, "Edit ", /*#__PURE__*/React.createElement("code", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10,
+        columnNumber: 16
+      }
+    }, "src/App.js"), " and save to reload."), /*#__PURE__*/React.createElement("a", {
+      className: "App-link",
+      href: "https://reactjs.org",
+      target: "_blank",
+      rel: "noopener noreferrer",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12,
+        columnNumber: 9
+      }
+    }, "Learn React")))
+  );
+}
+_c = App;
+exports.default = App;
+var _c;
+$RefreshReg$(_c, "App");
